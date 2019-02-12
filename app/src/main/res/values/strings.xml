@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Informed Running 3</string>
+    <string name="title_activity_user_menu">UserMenuActivity</string>
+    <string name="title_activity_running_log">RunningLogActivity</string>
+</resources>
