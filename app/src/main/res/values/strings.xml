@@ -2,4 +2,43 @@
     <string name="app_name">Informed Running 3</string>
     <string name="title_activity_user_menu">UserMenuActivity</string>
     <string name="title_activity_running_log">RunningLogActivity</string>
+    <string name="title_activity_run">RunActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+
+    <string-array name="metric_array">
+        <item>Meters</item>
+        <item>Miles</item>
+
+    </string-array>
+
+    <string-array name="weather_array">
+        <item>Sunny</item>
+        <item>Windy</item>
+        <item>Snowy</item>
+        <item>Neutral</item>
+        <item>Rainy</item>
+        <item>Stormy</item>
+        <item>Foggy</item>
+        <item>Cloudy</item>
+        <item>Icy</item>
+        <item>Hailing</item>
+
+    </string-array>
+
+    <string-array name="mood_array">
+        <item>Happy</item>
+        <item>Pleasant</item>
+        <item>Relaxed</item>
+        <item>Calm</item>
+        <item>Bored</item>
+        <item>Depressed</item>
+        <item>Sad</item>
+        <item>Stressed</item>
+        <item>Nervous</item>
+        <item>Tense</item>
+        <item>Alert</item>
+        <item>Exited</item>
+
+    </string-array>
+
 </resources>

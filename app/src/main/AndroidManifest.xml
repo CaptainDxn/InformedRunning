@@ -26,7 +26,16 @@
         <activity
             android:name=".RunningLogActivity"
             android:label="@string/title_activity_running_log"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RunActivity"
+            android:label="@string/title_activity_run"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".CaptchaCheckActivity" />
     </application>
 
 </manifest>
