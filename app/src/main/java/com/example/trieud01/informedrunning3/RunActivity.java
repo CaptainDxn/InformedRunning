@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 
 import android.util.Log;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -37,10 +36,6 @@ public class RunActivity extends AppCompatActivity {
         setContentView(R.layout.activity_run);
 
         current = new Run();
-        final String[] metricArray;
-        final String[] weatherArray;
-        final String[] moodArray;
-
 
         titleEditText = findViewById(R.id.title_edit_text);
         distanceEditText = findViewById(R.id.distance_edit_text);
@@ -51,17 +46,17 @@ public class RunActivity extends AppCompatActivity {
         dateButton = findViewById(R.id.date_button);
         submitButton = findViewById(R.id.submit_button);
 
-        makePublic = findViewById(R.id.make_public);
+        makePublic = findViewById(R.id.make_public_check_box);
 
         metricSpinner = findViewById(R.id.metric_spinner);
         weatherConditionSpinner = findViewById(R.id.weather_condition_spinner);
         moodSpinner = findViewById(R.id.mood_spinner);
 
-        final String[] metric = new String[]{"Meters", "Miles"};
+        final String[] metric = getResources().getStringArray(R.array.metric_array);
 
-        final String[] weather = new String[]{"Sunny", "Windy", "Rainy", "Neutral"};
+        final String[] weather = getResources().getStringArray(R.array.weather_array);
 
-        final String[] mood = new String[]{"Happy", "Sad", "Mad", "Calm", "Stressed"};
+        final String[] mood = getResources().getStringArray(R.array.mood_array);
 
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, metric);
@@ -86,9 +81,9 @@ public class RunActivity extends AppCompatActivity {
                 current.setPace(paceEditText.getText().toString());
                 current.setNotes(descriptionEditText.getText().toString());
 
-//                current.getMetric(metricSpinner.getSelectedItem().toString());
-//                current.getWeatherCondition(weatherConditionSpinner.getSelectedItem().toString());
-//                current.getMood(moodSpinner.getSelectedItem().toString());
+                current.setMetric(metricSpinner.getSelectedItem().toString());
+                current.setWeatherCondition(weatherConditionSpinner.getSelectedItem().toString());
+                current.setMood(moodSpinner.getSelectedItem().toString());
 
 
                 Backendless.Persistence.save(current, new AsyncCallback<Run>() {

@@ -1,4 +1,4 @@
-package com.example.trieud01.informedrunning3;
+package com.example.trieud01.informedrunning3.Activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +15,9 @@ import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
+import com.example.trieud01.informedrunning3.R;
+import com.example.trieud01.informedrunning3.SignUpActivity;
+import com.example.trieud01.informedrunning3.UserMenuActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -116,3 +119,9 @@ public class LoginActivity extends AppCompatActivity {
 
 
 }
+
+
+
+
+
+

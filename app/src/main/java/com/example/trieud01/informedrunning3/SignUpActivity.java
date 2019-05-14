@@ -14,6 +14,7 @@ import com.backendless.Backendless;
 import com.backendless.BackendlessUser;
 import com.backendless.async.callback.AsyncCallback;
 import com.backendless.exceptions.BackendlessFault;
+import com.example.trieud01.informedrunning3.Activity.LoginActivity;
 
 public class SignUpActivity extends AppCompatActivity {
 

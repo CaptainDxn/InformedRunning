@@ -89,9 +89,9 @@ public class Run {
         this.makePublic = makePublic;
     }
 
+
     @Override
-    public String
-    toString() {
+    public String toString() {
         return "Run{" +
                 "title='" + title + '\'' +
                 ", metric='" + metric + '\'' +
