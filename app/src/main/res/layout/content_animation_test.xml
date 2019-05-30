@@ -6,78 +6,81 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".RunActivity"
-    tools:showIn="@layout/activity_run">
-
-    <EditText
-        android:id="@+id/title_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/name_run"
-        android:textStyle="bold" />
-
-    <Button
-        android:id="@+id/date_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/enter_date_of_run" />
-
-    <CheckBox
-        android:id="@+id/make_public_check_box"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/would_you_like_to_make_this_public" />
-
-    <Spinner
-        android:id="@+id/metric_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:drawable/btn_dropdown" />
-
-    <Spinner
-        android:id="@+id/weather_condition_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:drawable/btn_dropdown" />
-
-    <EditText
-        android:id="@+id/distance_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/enter_distance"
-        android:inputType="number" />
-
-    <EditText
-        android:id="@+id/time_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/enter_time"
-        android:inputType="time" />
-
-    <EditText
-        android:id="@+id/pace_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/pace"
-        android:inputType="number" />
-
-    <Spinner
-        android:id="@+id/mood_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:drawable/btn_dropdown" />
-
-    <EditText
-        android:id="@+id/description_edit_text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/notes" />
+    tools:context=".AnimationTest"
+    tools:showIn="@layout/activity_animation_test">
 
 
     <Button
-        android:id="@+id/submit_button"
+        android:id="@+id/transfer_login_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/submit" />
+        android:hint="Go to Login" />
+
+    <Button
+        android:id="@+id/button_blink"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="blink" />
+
+    <Button
+        android:id="@+id/button_bounce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="bounce" />
+
+    <Button
+        android:id="@+id/button_fade_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fade in" />
+
+    <Button
+        android:id="@+id/button_fade_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="fade out" />
+
+    <Button
+        android:id="@+id/button_left_to_Right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="left to right" />
+
+    <Button
+        android:id="@+id/button_mixed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="mixed" />
+
+    <Button
+        android:id="@+id/button_right_to_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="right to left" />
+
+    <Button
+        android:id="@+id/button_rotate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="rotate" />
+
+    <Button
+        android:id="@+id/button_sample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sample" />
+
+    <Button
+        android:id="@+id/button_zoom_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="zoom in" />
+
+    <Button
+        android:id="@+id/button_zoom_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="zoom out" />
+
 
 </LinearLayout>

@@ -24,22 +24,37 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="First Name" />
+            android:hint="@string/first_name" />
 
         <EditText
             android:id="@+id/lastName_Edit_Text"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="Last Name" />
+            android:hint="@string/last_name" />
 
     </LinearLayout>
+
+    <EditText
+        android:id="@+id/age_Edit_Text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/gender_Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown" />
+
 
     <EditText
         android:id="@+id/email_Edit_Text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email" />
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
 
     <EditText
         android:id="@+id/password_Edit_Text"
@@ -52,7 +67,8 @@
         android:id="@+id/username_Edit_Text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username" />
+        android:hint="Username"
+        android:inputType="textNoSuggestions"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -80,7 +96,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/sign_Up_Button"
+        android:id="@+id/sign_up_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Sign Up" />

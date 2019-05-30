@@ -12,36 +12,43 @@
         android:id="@+id/email_Edit_Text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email" />
+        android:hint="@string/email" />
+
 
     <EditText
         android:id="@+id/password_Edit_Text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword" />
 
 
     <Button
-        android:id="@+id/logIn_Button"
+        android:id="@+id/log_in_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Login" />
+        android:hint="@string/login" />
 
     <Button
-        android:id="@+id/sign_Up_Button"
+        android:id="@+id/sign_up_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Sign Up" />
+        android:hint="@string/sign_up" />
 
 
     <CheckBox
-        android:id="@+id/stay_Logged_In_Check_Box"
+        android:id="@+id/stay_logged_in_check_box"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Stay Logged In"
+        android:hint="@string/stay_logged_in"
         android:textAlignment="center" />
 
+
+    <Button
+        android:id="@+id/test_transfer_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Test" />
 
 </LinearLayout>
 

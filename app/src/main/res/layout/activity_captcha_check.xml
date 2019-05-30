@@ -11,7 +11,9 @@
         android:id="@+id/tv_instruction"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select the Blue Boxes" />
+        android:text="@string/select_the_blue_boxes"
+        android:textSize="26sp"
+        android:textStyle="bold" />
 
 
     <LinearLayout
@@ -101,5 +103,5 @@
         android:id="@+id/submit_captcha_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Check Answer" />
+        android:text="@string/check_answer" />
 </LinearLayout>

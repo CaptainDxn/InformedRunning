@@ -13,31 +13,11 @@
         android:id="@+id/welcome_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Welcome "
-        android:textStyle="bold"
-        android:textSize="32sp"/>
+        android:hint="@string/welcome"
+        android:textSize="32sp"
+        android:textStyle="bold" />
 
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:gravity="center">
-
-        <TextView
-            android:id="@+id/create_text_view"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textStyle="bold"
-            android:textSize="26sp"
-            android:hint="Create New Run"
-            />
-    </LinearLayout>
-<Space
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,13 +29,11 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textStyle="bold"
+            android:hint="@string/view_your_runs"
             android:textSize="26sp"
-            android:hint="View Your Runs" />
+            android:textStyle="bold" />
     </LinearLayout>
-<android.support.v4.widget.Space
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -67,9 +45,9 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:textStyle="bold"
+            android:hint="@string/view_shared_runs"
             android:textSize="26sp"
-            android:hint="View Shared Runs" />
+            android:textStyle="bold" />
 
     </LinearLayout>
 
